@@ -1,12 +1,17 @@
-import React from 'react';
-import { ChakraProvider, Button } from '@chakra-ui/react';
+import Nav from './component/Nav';
+import HeroSection from './component/HeroSection';
+import Feature from './component/Feature';
+import Project from './component/Project';
+import Testimonials from './component/Testimonials';
 
-function App() {
+export default function App() {
   return (
-    <ChakraProvider>
-      <Button colorScheme="blue">Button</Button>
-    </ChakraProvider>
+    <>
+      <Nav />
+      <HeroSection />
+      <Feature />
+      <Project />
+      <Testimonials />
+    </>
   );
 }
-
-export default App;

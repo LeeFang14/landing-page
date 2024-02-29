@@ -1,0 +1,89 @@
+h1,
+h2,
+h3,
+h4 {
+  font-family: 'Poppins, serif';
+}
+
+p,
+span {
+  font-family: 'Mulish, sans-serif';
+}
+
+/* nav hero button */
+.btn {
+  padding: 16px 50px 16px 50px;
+  display: flex;
+  gap: 8px;
+  align-items: center;
+  justify-content: center;
+  border-radius: 20px;
+  font-weight: 400;
+  transition: all 0.3s ease;
+  line-height: 1.5;
+}
+.btn:hover {
+  text-decoration: none;
+  transform: scale(0.97);
+}
+
+.primary_button {
+  background: #009379;
+  color: #ffffff;
+}
+
+.secondary_button {
+  background: #ffffff;
+  color: #009379;
+  border: 1px solid #009379;
+}
+
+.secondaryColor_button {
+  background: #e5f4f2;
+  color: #009379;
+}
+
+.tertiary_button {
+  color: #009379;
+}
+
+/* feature */
+.feature_card {
+  box-sizing: border-box;
+  padding: 20px;
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  border: 1px solid #e5f4f2;
+  border-radius: 20px;
+  background: #ffffff;
+  max-height: 90px;
+  box-shadow: 34.854148864746094px 29.626028060913086px 48.34000015258789px 0px
+    #3366ff0d;
+}
+
+.feature_card_icon {
+  padding: 12.2px;
+  background: #e5f4f2;
+  border-radius: 12.2px;
+}
+
+/* Project */
+
+.project_card {
+  display: flex;
+  flex-direction: column;
+  text-align: initial;
+  border-radius: 20px;
+  background: #ffffff;
+  box-shadow: 34.854148864746094px 29.626028060913086px 48.34000015258789px 0px
+    #3366ff0d;
+}
+
+/* Testimonials */
+
+.testimonials_card {
+  background: #ffffff;
+  border: 1px solid #e5f4f2;
+  border-radius: 20px;
+}
