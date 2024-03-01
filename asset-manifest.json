@@ -1,0 +1,25 @@
+{
+  "files": {
+    "main.css": "/my-app/static/css/main.30fb053d.css",
+    "main.js": "/my-app/static/js/main.a6278de9.js",
+    "static/media/Mockup.svg": "/my-app/static/media/Mockup.a455c213d7a6a613626e096fd67910f1.svg",
+    "static/media/Visuals.svg": "/my-app/static/media/Visuals.5e363a2d213b29937e105ed476f2ed42.svg",
+    "static/media/Photo2.svg": "/my-app/static/media/Photo2.d1ffcb98e77423457504207495b9c6f4.svg",
+    "static/media/Photo1.svg": "/my-app/static/media/Photo1.1671dcf4293c9d006768ab90d09a9e4a.svg",
+    "static/media/BoundingBox.svg": "/my-app/static/media/BoundingBox.ff45e11ee896b2ce2783ff646d902ae6.svg",
+    "static/media/FlyingSaucer.svg": "/my-app/static/media/FlyingSaucer.504403480289ec23dcc33cf0c5373814.svg",
+    "static/media/MagicWand.svg": "/my-app/static/media/MagicWand.5bc0a361ee549b16b6ec84b15568f884.svg",
+    "static/media/Package.svg": "/my-app/static/media/Package.e6f494deb98d344b350f180067572080.svg",
+    "static/media/RocketLaunch.svg": "/my-app/static/media/RocketLaunch.12827ff2e9b633a1946abd6d69723b7c.svg",
+    "static/media/StarIcon.svg": "/my-app/static/media/StarIcon.d587ca8b6f79139c5e6c63d5d0d91691.svg",
+    "index.html": "/my-app/index.html",
+    "static/media/Logo.svg": "/my-app/static/media/Logo.988beef01b786cd619f2481125cfb1cf.svg",
+    "static/media/ArrowLeft.svg": "/my-app/static/media/ArrowLeft.1d08219e76e15df8b15c10ea4575f048.svg",
+    "main.30fb053d.css.map": "/my-app/static/css/main.30fb053d.css.map",
+    "main.a6278de9.js.map": "/my-app/static/js/main.a6278de9.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.30fb053d.css",
+    "static/js/main.a6278de9.js"
+  ]
+}
