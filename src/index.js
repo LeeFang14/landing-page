@@ -11,10 +11,6 @@ const theme = extendTheme({
     md: '780px',
     lg: '1280px', // desktop
   },
-  // fonts: {
-  // body: 'Mulish, sans-serif',
-  // heading: 'Poppins, serif',
-  // },
   components: {
     Container: {
       baseStyle: {
@@ -27,16 +23,8 @@ const theme = extendTheme({
     global: {
       body: {
         minW: '375px',
-        fontSize: '16px', // 设置全局字体大小为16px
+        fontSize: '16px',
       },
-    },
-  },
-  textStyles: {
-    h1: {
-      fontFamily: 'Poppins, serif', // 标题字体
-    },
-    h2: {
-      fontFamily: 'Poppins, serif', // 标题字体
     },
   },
 });

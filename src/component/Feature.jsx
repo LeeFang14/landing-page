@@ -37,7 +37,7 @@ export default function Feature() {
               >
                 Our features
               </Text>
-              <Text as="p" fontSize="21px" lineHeight="1.5" fontWeight="400">
+              <Text fontSize="21px" lineHeight="1.5" fontWeight="400">
                 Few good reasons why you should use Anima Landing Page Ui Kit to
                 make your own pages.
               </Text>
@@ -46,9 +46,13 @@ export default function Feature() {
               templateColumns={{ base: '1fr', md: 'repeat(2, 1fr)' }}
               gap="18px"
             >
-              <Box as="p" className="feature_card">
+              <Box className="feature_card">
                 <Box ratio="1" className="feature_card_icon">
-                  <Image w="25.61px" src={FlyingSaucer} alt="FlyingSaucer" />
+                  <Image
+                    width="25.61px"
+                    src={FlyingSaucer}
+                    alt="FlyingSaucer"
+                  />
                 </Box>
                 <Text
                   as="span"
@@ -59,9 +63,9 @@ export default function Feature() {
                   Fast building
                 </Text>
               </Box>
-              <Box as="p" className="feature_card">
+              <Box className="feature_card">
                 <Box ratio="1" className="feature_card_icon">
-                  <Image w="25.61px" src={MagicWand} alt="MagicWand" />
+                  <Image width="25.61px" src={MagicWand} alt="MagicWand" />
                 </Box>
                 <Text
                   as="span"
@@ -72,9 +76,9 @@ export default function Feature() {
                   Easy to edit
                 </Text>
               </Box>
-              <Box as="p" className="feature_card">
+              <Box className="feature_card">
                 <Box ratio="1" className="feature_card_icon">
-                  <Image w="25.61px" src={BoundingBox} alt="BoundingBox" />
+                  <Image width="25.61px" src={BoundingBox} alt="BoundingBox" />
                 </Box>
                 <Text
                   as="span"
@@ -85,9 +89,9 @@ export default function Feature() {
                   Responsiveness
                 </Text>
               </Box>
-              <Box as="p" className="feature_card">
+              <Box className="feature_card">
                 <Box ratio="1" className="feature_card_icon">
-                  <Image w="25.61px" src={Package} alt="Package" />
+                  <Image width="25.61px" src={Package} alt="Package" />
                 </Box>
                 <Text
                   as="span"

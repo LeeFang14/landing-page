@@ -1,8 +1,26 @@
-import React from 'react';
-import { Container, Box, Image, Text } from '@chakra-ui/react';
-import ImagePlaceholder from '../assets/images/ImagePlaceholder.svg';
+import React, { useEffect, useState } from 'react';
+import { Container, Box, Grid, Text } from '@chakra-ui/react';
+import ProjectCard from './ProjectCard';
 
 export default function Project() {
+  const [fetchedData, setFetchedData] = useState([]);
+
+  useEffect(() => {
+    const fetchData = async () => {
+      try {
+        const response = await fetch(
+          'https://restcountries.com/v3.1/name/China'
+        );
+        const jsonData = await response.json();
+        setFetchedData(jsonData);
+      } catch (error) {
+        console.error('Error fetching data:', error);
+      }
+    };
+
+    fetchData();
+  }, []);
+
   return (
     <Box bg="#F8F9FF">
       <Container
@@ -31,125 +49,14 @@ export default function Project() {
               brought to life.
             </Text>
           </Box>
-          <Box
-            display="flex"
-            flexDirection={{ base: 'column', lg: 'row' }}
+          <Grid
+            templateColumns={{ base: '1fr', md: 'repeat(3, 1fr)' }}
             gap="30px"
-            justifyContent="center"
           >
-            {/* 這裡要打API傳資料進來，有幾比資料放幾張卡片 */}
-            <Box className="project_card">
-              <Box>
-                <Image src={ImagePlaceholder} alt="ImagePlaceholder" w="100%" />
-              </Box>
-              <Box
-                display="flex"
-                flexDirection="column"
-                gap="12px"
-                p="20px 30px 20px 30px"
-              >
-                <Text
-                  as="h3"
-                  fontSize="28px"
-                  lineHeight="1.3"
-                  fontWeight="600"
-                  letterSpacing="-0.02em"
-                >
-                  Project Title
-                </Text>
-                <Text
-                  as="span"
-                  fontSize="16px"
-                  lineHeight="1.5"
-                  fontWeight="400"
-                >
-                  Short Description
-                </Text>
-                <Text
-                  as="span"
-                  fontSize="16px"
-                  lineHeight="1.5"
-                  fontWeight="400"
-                >
-                  Category
-                </Text>
-              </Box>
-            </Box>
-            <Box className="project_card">
-              <Box>
-                <Image src={ImagePlaceholder} alt="ImagePlaceholder" w="100%" />
-              </Box>
-              <Box
-                display="flex"
-                flexDirection="column"
-                gap="12px"
-                p="20px 30px 20px 30px"
-              >
-                <Text
-                  as="h3"
-                  fontSize="28px"
-                  lineHeight="1.3"
-                  fontWeight="600"
-                  letterSpacing="-0.02em"
-                >
-                  Project Title
-                </Text>
-                <Text
-                  as="span"
-                  fontSize="16px"
-                  lineHeight="1.5"
-                  fontWeight="400"
-                >
-                  Short Description
-                </Text>
-                <Text
-                  as="span"
-                  fontSize="16px"
-                  lineHeight="1.5"
-                  fontWeight="400"
-                >
-                  Category
-                </Text>
-              </Box>
-            </Box>
-            <Box className="project_card">
-              <Box>
-                <Image src={ImagePlaceholder} alt="ImagePlaceholder" w="100%" />
-              </Box>
-              <Box
-                display="flex"
-                flexDirection="column"
-                gap="12px"
-                p="20px 30px 20px 30px"
-              >
-                <Text
-                  as="h3"
-                  fontSize="28px"
-                  lineHeight="1.3"
-                  fontWeight="600"
-                  letterSpacing="-0.02em"
-                >
-                  Project Title
-                </Text>
-                <Text
-                  as="span"
-                  fontSize="16px"
-                  lineHeight="1.5"
-                  fontWeight="400"
-                >
-                  Short Description
-                </Text>
-                <Text
-                  as="span"
-                  fontSize="16px"
-                  lineHeight="1.5"
-                  fontWeight="400"
-                >
-                  Category
-                </Text>
-              </Box>
-            </Box>
-          </Box>
+            {fetchedData.map(data => (
+              <ProjectCard key={data.name.common} data={data} />
+            ))}
+          </Grid>
         </Box>
       </Container>
     </Box>

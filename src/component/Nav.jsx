@@ -17,7 +17,7 @@ export default function Nav() {
         {/* navbar-logo */}
         <Box as="h1">
           <Box as="a" href="#" display="flex" alignItems="center" gap="6px">
-            <Box W="32px" ratio="1">
+            <Box width="32px" ratio="1">
               <Image src={Logo} alt="logo" />
             </Box>
             <Text hideBelow="md" fontSize="21px" lineHeight="1.3">
@@ -47,11 +47,11 @@ export default function Nav() {
             How it works
           </Box>
           <Box as="a" href="#" className="btn primary_button">
-            <Box maxW="20px" ratio="1" hideBelow="lg">
+            <Box maxWidth="20px" ratio="1" hideBelow="lg">
               <Image src={RocketLaunch} alt="RocketLaunch" />
             </Box>
             <Text as="span">Get Started</Text>
-            <Box maxW="20px" ratio="1" hideFrom="lg">
+            <Box maxWidth="20px" ratio="1" hideFrom="lg">
               <Image src={ArrowLeft} alt="ArrowLeft" />
             </Box>
           </Box>

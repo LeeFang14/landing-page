@@ -79,6 +79,9 @@ span {
   box-shadow: 34.854148864746094px 29.626028060913086px 48.34000015258789px 0px
     #3366ff0d;
 }
+.project_card img {
+  border-radius: 20px 20px 0px 0px;
+}
 
 /* Testimonials */
 

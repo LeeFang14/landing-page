@@ -52,7 +52,7 @@ export default function HeroSection() {
               p={{ lg: '0 0 90px 0' }}
             >
               <Box as="a" href="#" className="btn primary_button">
-                <Box maxW="20px" ratio="1">
+                <Box maxWidth="20px" ratio="1">
                   <Image src={RocketLaunch} alt="RocketLaunch" />
                 </Box>
                 <Text
